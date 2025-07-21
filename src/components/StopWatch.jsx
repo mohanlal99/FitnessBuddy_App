@@ -1,6 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import Button from "./ui/Button";
-import SectionTitle from "./ui/SectionTitle";
 const initialTimer = ["00", "00", "00"]
 const StopWatch = () => {
   let [timer, setTimer] = useState(initialTimer);

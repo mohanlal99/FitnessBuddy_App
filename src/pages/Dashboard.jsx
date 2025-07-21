@@ -17,6 +17,7 @@ import Button from "../components/ui/Button";
 import SectionHeader from "../components/ui/SectionHeader";
 import SectionTitle from "../components/ui/SectionTitle";
 import { calculateBMI } from "../config/site";
+import StopWatch from "../components/StopWatch";
 
 const Dashboard = React.memo(() => {
   const user = useSelector((state) => state.auth.user);
@@ -62,14 +63,14 @@ const Dashboard = React.memo(() => {
             />
           </div>
         </Box>
-        {/* <Box>
+        <Box>
            <SectionTitle
             title="StopWatch"
             icon={TimerResetIcon}
             iconSize={30}
           />
-        <StopWatch/>
-        </Box> */}
+          <StopWatch/>
+        </Box>
         <BMICalculator/>
 
         {/* Workout & Buddies Overview */}
