@@ -1,26 +1,23 @@
-import React from "react";
-import { useSelector } from "react-redux";
 import {
   LayoutDashboardIcon,
   LucideWorkflow,
-  ReceiptTextIcon,
   Target,
   TimerResetIcon,
-  TreePalm,
-  TrendingDown,
   TrendingUp,
-  Users,
-  WandIcon,
+  Users
 } from "lucide-react";
-import SectionHeader from "../components/ui/SectionHeader";
-import SectionTitle from "../components/ui/SectionTitle";
+import React from "react";
+import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import BMICalculator from "../components/BMICalculater";
+import CompletedChallenges from "../components/CompletedChallenges";
+
 import Box from "../components/ui/Box";
 import Button from "../components/ui/Button";
-import { useNavigate } from "react-router-dom";
+import SectionHeader from "../components/ui/SectionHeader";
+import SectionTitle from "../components/ui/SectionTitle";
 import { calculateBMI } from "../config/site";
-import BMICalculator from "../components/BMICalculater";
-import StopWatch from "../components/Sotpwatch";
-import CompletedChallenges from "../components/CompletedChallenges";
+import StopWatch from "../components/StopWatch";
 
 const Dashboard = React.memo(() => {
   const user = useSelector((state) => state.auth.user);
