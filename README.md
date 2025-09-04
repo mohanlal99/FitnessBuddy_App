@@ -2,6 +2,9 @@
 
 **FitnessBuddy_App** is a full-featured fitness platform designed to tracking workout progress, and achieving health milestones together.
 
+**Project Type:** Full-Stack
+
+- 🌍 [Live](https://fitness-buddy-ruddy.vercel.app/)  
 ---
 
 ## 🚀 Project Goal
